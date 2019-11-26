@@ -1,0 +1,55 @@
+
+@media all and (max-width: 375px){
+    main>:nth-child(4){
+        display: none;
+    }
+
+    main > section:nth-child(5) {
+        height: 320px;
+        top: 0px;
+    }
+
+    main > section:nth-child(5) {
+        height: 410px;
+    }
+
+    main > section:nth-child(5) > div{
+        top: 22px;
+    }
+
+    main > section:nth-child(5) > div>img{
+        animation: none;
+    }
+
+    #Skills {
+        height: 900px;
+    }
+
+    #Skills>:nth-child(3) {
+        grid-template-columns: repeat(1,1fr);
+        height: 850px;
+    }
+
+    #Contact>:nth-child(2){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #Contact>:nth-child(2)>:nth-child(5){
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    #Contact>:nth-child(2)>:nth-child(6){
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    #Contact>:nth-child(2)>:nth-child(7) {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    footer{
+        height: 36px;
+    }
+}

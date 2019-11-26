@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>BirthDay by NIC</title>
+	<link rel="stylesheet" type="text/css" href="output.css">
+</head>
+<body>
+	<div class="outputBox">
+		<p class="p1">Your birthday is on</p><br>
+
+		<p class="p2" id="a1">--</p><br>
+		
+		<p class="p3">Month</p><br>
+		
+		<p class="p4" id="a2">--</p><br>
+		
+		<p class="p5">Age</p>
+		
+		<p class="p6">Next</p>
+		
+		<p class="p7" id="a3">--</p>
+		
+		<p class="p8" id="a4">--</p>
+	
+	</div>
+
+	<script>
+	
+		var date,DOB,month,age;
+		date=localStorage.getItem("date");
+		DOB=localStorage.getItem("DOB");
+		month=localStorage.getItem("month");
+		age=localStorage.getItem("age");
+
+		document.getElementById("a1").innerHTML=DOB;
+		document.getElementById("a2").innerHTML=month;
+		document.getElementById("a3").innerHTML=age;
+
+	</script>
+</body>
+</html>

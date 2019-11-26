@@ -1,0 +1,20 @@
+
+@media all and (max-width: 1240px) and (min-width: 900px){
+    main>:nth-child(4)>:nth-child(4){left: unset; right: 100px; }
+    main>:nth-child(4)>:nth-child(5){left: unset; right: 20px; }
+}
+
+@media all and (max-width: 900px) and (min-width: 768px){
+
+    #Assignments {
+        height: 550px;
+    }
+
+    #Assignments>:nth-child(2){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    main>:nth-child(4)>:nth-child(3){top: -37px;}
+    main>:nth-child(4)>:nth-child(4){left: unset; right: 100px; }
+    main>:nth-child(4)>:nth-child(5){left: unset; right: 20px; }
+}

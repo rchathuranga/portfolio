@@ -1,0 +1,91 @@
+body{
+	background-color: #000;
+	background-size: cover;
+	font-family: Lucida Sans;
+	
+}
+
+.outputBox{
+	background-image: linear-gradient(#cc5333,#23074d);
+	width: 340px;
+	height: 530px;
+	background-color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	/*padding: 20px 30px;*/
+	padding-top: 30px;
+	color: #fff;
+}
+
+.p1{
+	font-family: Segoe UI Black;
+	font-size: 29px;
+	text-align: center;
+	color: #23074d;
+}
+
+.p2{
+	font-family: Agency FB;
+	font-weight: bold;
+	font-size: 34px;
+	color: #fff;
+	text-align: center;
+	margin-top: -30px;
+	margin-bottom: 40px;
+}
+
+.p3{
+	font-family: Segoe UI Black;
+	font-size: 26px;
+	text-align: center;
+	color: #23074d;
+	margin-top: -10px;
+}
+
+.p4{
+	font-family: Agency FB;
+	font-weight: bold;
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	margin-top: -40px;
+	margin-bottom: 40px;
+}
+
+.p5{
+	font-family: Segoe UI Black;
+	font-size: 19px;
+	margin-top: -10px;
+	margin-left: 50px;
+	color: #cc5333;
+}
+
+.p6{
+	font-family: Segoe UI Black;
+	font-size: 19px;
+	margin-top: -45px;
+	margin-right: 50px;
+	text-align: right;
+	color: #cc5333;
+}
+
+
+.p7{
+	font-family: Agency FB;
+	font-size: 22px;
+	margin-top: -10px;
+	margin-left: 60px;
+	color: #fff;
+}
+
+.p8{
+	font-family: Agency FB;
+	font-size: 22px;
+	margin-top: -45px;
+	margin-right: 70px;
+	text-align: right;
+	color: #fff;
+}
