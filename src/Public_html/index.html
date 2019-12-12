@@ -44,7 +44,7 @@
     <h3>Welcome</h3>
     <section>
         <div><div class="proPic">
-            <img src="assets/propicnew.jpg" alt="" width="105%">
+<!--            <img src="assets/propicnew.jpg" alt="" width="105%">-->
         </div></div>
     </section>
     <section>
@@ -68,9 +68,10 @@
             <i class="fab fa-twitter"></i>
         </a>
     </div>
-    <section>
+    <section id="particles-js">
         <h2>It's me</h2>
-        <h4>I am a highly motivated and skilled Software Engineering undergraduate, interesting in software development, Android
+        <h4>I am a highly motivated and skilled Software Engineering undergraduate, interesting in software development,
+            Android
             development and Web Development. I hope to join a company as a trainee for get an industrial
             experience and use the theoretical knowledge in practically.
         </h4>
@@ -130,28 +131,38 @@
     <section id="Assignments">
         <h3>Assingment</h3>
         <section>
-            <div><div>
-                <img id="imgCar1" src="assets/car-png.png" alt="car" width="35%">
-                <h3>Car</h3>
-                <h3>Animation</h3>
-                <p>Car going on a road. only html and css. <a href="Assignments/Car Animation/index.html">View</a></p>
-            </div></div>
-            <div><div>
-                <img id="imgKnight" src="assets/knight-rider-wide.png" alt="car" width="40%">
-                <h3>Knight</h3>
-                <h3>Rider Animation</h3>
-                <p>Knight Rider Animation animated by CSS <a href="Assignments/Knight%20Rider/index.html">View</a></p>
-            </div></div>
-            <div><div>
-            <img id="imgBirth" src="assets/birthday_icon.png" alt="birthday_icon" width="30%">
-            <h3>BirthDay</h3>
-            <h3>By ID number</h3>
-            <p>Show your birthday by nic number. HTML CSS and JS. <a href="Assignments/BirthDay%20By%20Id/input.html">View</a></p>
-            </div></div>
-            <div><div>
-                <img id="imgQuestion" src="assets/Question-Mark-PNG-Picture.png" alt="" width="30%">
-                <h3>Glowing</h3>
-                <h3>Effect for Name</h3>
+            <div>
+                <div>
+                    <img id="imgCar1" src="assets/car-png.png" alt="car" width="35%">
+                    <h3>Car</h3>
+                    <h3>Animation</h3>
+                    <p>Car going on a road. only html and css. <a href="Assignments/Car Animation/index.html">View</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div data-tilt>
+                    <img id="imgKnight" src="assets/knight-rider-wide.png" alt="car" width="40%">
+                    <h3>Knight</h3>
+                    <h3>Rider Animation</h3>
+                    <p>Knight Rider Animation animated by CSS <a href="Assignments/Knight%20Rider/index.html">View</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="imgBirth" src="assets/birthday_icon.png" alt="birthday_icon" width="30%">
+                    <h3>BirthDay</h3>
+                    <h3>By ID number</h3>
+                    <p>Show your birthday by nic number. HTML CSS and JS. <a
+                            href="Assignments/BirthDay%20By%20Id/input.html">View</a></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img id="imgQuestion" src="assets/Question-Mark-PNG-Picture.png" alt="" width="30%">
+                    <h3>Glowing</h3>
+                    <h3>Effect for Name</h3>
                 <p>Glowing name by HTML CSS <a href="Assignments/GLowing%20Name/glow.html">View</a></p>
             </div></div>
             <div><div>
@@ -232,9 +243,9 @@
                 <div>
                     <div class="icon">05</div>
                     <div class="content">
-                        <h2>Nothing Yet</h2>
-                        <p>Coming Soon</p>
-                        <a href="">View</a>
+                        <h2>Comet Blue</h2>
+                        <p>To destroy enemy ships by Comet Spaceship. Shooting JavaScript Game</p>
+                        <a href="Projects/">View</a>
                     </div>
                 </div>
             </article>
@@ -286,8 +297,48 @@
 <footer>
     <h5>Copyright © All Rights Reserved. 2019 Ravindu Chathuranga</h5>
 </footer>
+
 <script src="js/jquary/jquery-3.4.1.min.js"></script>
+<script src="js/particlejs/particles.min.js"></script>
+<script src="js/particlejs/app.js"></script>
 <script src="js/dark.js"></script>
 <script src="js/scroll.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"
+        integrity="sha256-Wua0LsQkGDEeIkbmBNjj9wcThJh5uCD6R8+5YQhXveQ=" crossorigin="anonymous"></script>
+<script src="js/hover-effect.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script !src="">
+    new hoverEffect({
+        parent: document.querySelector('.proPic'),
+        intensity: 0.2,
+        image1: './assets/propicnew.jpg',
+        image2: './assets/propic2.jpeg',
+        displacementImage: './assets/diss.png'
+    });
+
+
+    // $($('#Assignments').children()[1]).css('background','yellow')
+
+    var length = $($('#Assignments').children()[1]).children().length;
+    for (let i = 0; i < length; i++) {
+        $($($($('#Assignments').children()[1]).children()[i]).children()).tilt({
+            maxTilt: 25,
+            perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+            easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+            scale: 1,      // 2 = 200%, 1.5 = 150%, etc..
+            speed: 500,    // Speed of the enter/exit transition.
+            transition: true,   // Set a transition on enter/exit.
+            disableAxis: null,   // What axis should be disabled. Can be X or Y.
+            reset: true,   // If the tilt effect has to be reset on exit.
+            glare: false,  // Enables glare effect
+            maxGlare: 1       // From 0 - 1.
+        });
+    }
+
+
+</script>
 </body>
 </html>

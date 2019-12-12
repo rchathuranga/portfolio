@@ -18,6 +18,7 @@
     background: #FBBC05;
 }
 
+
 @font-face {
     font-family: 'AvenirLTStd';
     src: url("../assets/fonts/AvenirLTStd-Black.otf");
@@ -234,10 +235,10 @@ main >:nth-child(2)>div { /*section profile pic*/
     transition: all .4s;
 }
 
-.proPic > img { /*pic profile pic*/
-    position: absolute;
-    top: 0px;
-    transition: all .4s;
+.proPic > canvas { /*pic profile pic*/
+    position: absolute !important;
+    top: 0px !important;
+    /*transition: all .4s;*/
 }
 
 main > section:nth-child(3) > h1 {
@@ -309,6 +310,10 @@ main > section:nth-child(5) {
     background: #333333; /* section dark */
 }
 
+#particles-js > canvas {
+    position: absolute;
+    top: 0;
+}
 
 main > section:nth-child(5) > h2 { /* section Its me */
     text-align: center;
@@ -603,6 +608,7 @@ main > section:nth-child(5) > div > img { /* arrow img */
     left: 0;
     right: 0;
     margin: auto;
+    transform-style: preserve-3d
 }
 
 #Assignments>:nth-child(2)>:nth-child(2)>div>img{
@@ -621,6 +627,7 @@ main > section:nth-child(5) > div > img { /* arrow img */
     left: 15px;
     font-family: 'Overlock', cursive;
     display: inline;
+    /*transform: translateZ(20px)*/
 }
 
 #Assignments>:nth-child(2)>div>div>:nth-child(3){
@@ -628,12 +635,14 @@ main > section:nth-child(5) > div > img { /* arrow img */
     top: 5px;
     font-family: 'Overlock', cursive;
     left: 15px;
+    /*transform: translateZ(20px)*/
 }
 
 #Assignments>:nth-child(2)>div>div>img{
     position: absolute;
     right: 30px;
     top: 10px;
+    transform: translateZ(25px)
 }
 
 #Assignments>:nth-child(2)>:nth-child(2)>img{
