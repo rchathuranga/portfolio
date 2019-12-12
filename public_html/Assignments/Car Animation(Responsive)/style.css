@@ -1,0 +1,71 @@
+
+body {
+    background: url("resources/sky.jpg");
+}
+
+main {
+    width: 100vw;
+    max-height: 720px;
+    height: 100vh;
+    top: calc(100vh - 720px);
+    overflow: hidden;
+    position: relative;
+    background: url("resources/sky.jpg");
+}
+
+main > :nth-child(1) {
+    position: relative;
+    top: 5px;
+    animation: background 2s infinite;
+}
+
+main > :nth-child(2) {
+    animation: background 2s infinite;
+}
+
+@keyframes background {
+    to {
+        transform: translateX(-100%);
+        transition: all 1s
+    }
+}
+
+main > :nth-child(3) {
+    width: 350px;
+    position: relative;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+main > :nth-child(3) > :nth-child(1) {
+}
+
+main > :nth-child(3) > :nth-child(2) {
+    position: absolute;
+    bottom: 5px;
+    left: 8%;
+    animation: wheel 2s infinite;
+}
+
+main > :nth-child(3) > :nth-child(3) {
+    position: absolute;
+    right: 11%;
+    bottom: 5px;
+    animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+    0% {
+    }
+    100% {
+        transform: rotate(900deg)
+    }
+}
+
+@media all and (max-height: 720px) {
+    main {
+        top: 0;
+    }
+}

@@ -1,0 +1,242 @@
+@media all and (max-width: 768px) and (min-width: 425px) {
+
+
+    header::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    main > section:nth-child(4) {
+        height: 250px;
+    }
+
+    main > :nth-child(2) > div { /*section profile pic*/
+        width: 160px;
+        top: 10px;
+    }
+
+    .proPic {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    main > section:nth-child(2) { /*section profile pic*/
+        height: max-content;
+    }
+
+    main > :nth-child(4) {
+        width: 40px;
+        height: 300px;
+        top: 0px;
+        left: 0;
+        z-index: 9;
+        position: absolute;
+        display: flex;
+    }
+
+    main > :nth-child(4) > a {
+        width: 40px;
+        height: 40px;
+        background: white;
+        box-shadow: 1px 1px 4px #00000078;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 20%;
+        font-size: 25px;
+        position: absolute;
+        top: 0px;
+        margin-top: 0px;
+        transition: margin-top 1s, color 1s;
+        animation: tabletMainSocial 5s infinite;
+    }
+
+    @keyframes tabletMainSocial {
+        0% {
+        }
+        46% {
+            color: #d7d7d7;
+        }
+        47% {
+            color: #1A73E8
+        }
+        50% {
+            left: 10px;
+            color: rgba(26, 115, 232, 0.15);
+        }
+        51% {
+            color: #1A73E8
+        }
+        100% {
+        }
+    }
+
+    main > :nth-child(4) > a:hover {
+        animation: unset;
+        left: 20px;
+        color: #FBBC05;
+        background-color: #333333;
+        transition: left 1s, color 1s;
+    }
+
+    main > :nth-child(4) > :nth-child(1) {
+        top: 20px;
+        left: -50px;
+    }
+
+    main > :nth-child(4) > :nth-child(2) {
+        top: 75px;
+        left: -50px;
+    }
+
+    main > :nth-child(4) > :nth-child(3) {
+        top: 130px;
+        left: -50px;
+    }
+
+    main > :nth-child(4) > :nth-child(4) {
+        top: 185px;
+        left: -50px;
+    }
+
+    main > :nth-child(4) > :nth-child(5) {
+        top: 240px;
+        left: -50px;
+    }
+
+
+    main > section:nth-child(4) > h4 { /* section para(h4) */
+        width: 70%;
+        position: relative;
+        left: 13.5%;
+        top: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    main > section:nth-child(4) > div { /* section arrowdown */
+        position: relative;
+        width: 3%;
+        height: auto;
+        left: 48.5%;
+        top: 4%;
+    }
+
+    main > section:nth-child(4) > div > img { /* arrow img */
+        animation: none;
+    }
+
+    main > section:nth-child(5) {
+        top: 0px;
+        height: 300px;
+    }
+
+    main > section:nth-child(5) > div {
+        top: 10%;
+    }
+
+    main > section:nth-child(5) > div > img {
+        animation: none;
+    }
+
+    #About > :nth-child(2) > div {
+        display: none;
+    }
+
+    #About > :nth-child(4) > div {
+        display: none;
+    }
+
+    #Skills {
+        height: 320px;
+    }
+
+    #Skills > :nth-child(3) > div > :nth-child(2) {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Skills > :nth-child(3) > div > :nth-child(1) {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    #Skills > :nth-child(3) {
+        grid-template-columns: repeat(3, 1fr);
+        height: 285px;
+    }
+
+    #Assignments {
+        height: 1500px;
+    }
+
+    #Assignments > :nth-child(2) {
+        position: absolute;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #Assignments > :nth-child(2) > div > img {
+        width: 40px;
+    }
+
+    #Assignments > :nth-child(2) > div > div > img {
+        position: absolute;
+        right: 30px;
+        top: 2px;
+        max-width: 135px;
+    }
+
+    #Project {
+        height: 1120px;
+    }
+
+    #Project > :nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: max-content;
+        grid-gap: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #Contact {
+        height: 320px;
+    }
+
+    #Contact > :nth-child(2) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #Contact > :nth-child(2) > :nth-child(6) {
+        grid-column: 1/5;
+        grid-row: 2;
+    }
+
+    #Contact > :nth-child(2) > :nth-child(6) > a {
+        z-index: 10;
+    }
+
+    #Contact > :nth-child(2) > :nth-child(7) {
+        grid-column: 2/6;
+        grid-row: 2;
+    }
+
+}
