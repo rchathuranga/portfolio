@@ -5,6 +5,7 @@ darkButton.addEventListener('click', function () {
     var css = document.getElementById('mainCSS');
     var list = document.getElementsByClassName('imgComingSoon');
     if (onDark) {
+        $('meta[name=theme-color]').attr('content', '#ffffff');
         css.setAttribute('href', 'css/style.css');
 
         document.getElementById('imgSchool').setAttribute('src', 'assets/school_building.png');
@@ -22,6 +23,8 @@ darkButton.addEventListener('click', function () {
 
         onDark = false;
     } else {
+        $('meta[name=theme-color]').attr('content', '#000000');
+
         css.setAttribute('href', 'css/DarkMode/dark.css');
 
         document.getElementById('imgSchool').setAttribute('src', 'assets/darkschool.png');
@@ -36,7 +39,7 @@ darkButton.addEventListener('click', function () {
         for (var i = 0; i < list.length; ++i) {
             list[i].setAttribute('src', 'assets/darkComingSoon.png');
         }
-
         onDark = true;
     }
+    $("body > :nth-child(1) > i").css('transform', 'rotate(360deg)');
 });

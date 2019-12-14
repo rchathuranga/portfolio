@@ -1,4 +1,10 @@
 
+*::selection {
+    background: #1A73E8;
+    color: white;
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -64,6 +70,12 @@ header::-webkit-scrollbar {
     height: 5px;
 }
 
+header::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 10px;
+}
+
 header > ul {
     width: max-content;
     position: absolute;
@@ -86,7 +98,15 @@ header > ul > li {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     border-bottom: 2px solid white;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
+
+
 
 header > ul > li:hover {
 
@@ -182,6 +202,7 @@ body > :nth-child(1) > i {
     font-size: 30px;
     right: 10px;
     margin: auto;
+    transition: all 1s;
 }
 
 main {
